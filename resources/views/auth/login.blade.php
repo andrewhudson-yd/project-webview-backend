@@ -5,6 +5,7 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
+        <p>Device Token: {{ request('device_token') }}</p>
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
