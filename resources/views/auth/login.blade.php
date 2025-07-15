@@ -5,7 +5,10 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <p>Device Token: {{ request('device_token') }}</p>
+        @if (request('device_token'))
+            @php(session(['device_token' => request('device_token')]))
+        @endif
+
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
@@ -23,6 +26,8 @@
                             required autocomplete="current-password" />
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
+         
+ 
         </div>
 
         <!-- Remember Me -->
