@@ -41,13 +41,10 @@
         </style>
     @endif
 </head>
-<body>
-    <div>
+<body style="margin: 0; background-color: #faf7f3;">
+    <div class="p-4" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
         {{-- Optional logo --}}
-        {{-- <img src="/logo.svg" alt="Logo" style="margin: 0 auto 2rem; max-width: 120px;"> --}}
-
-        <h1>We're Launching Soon</h1>
-        <p>Our website is getting ready. Please check back shortly.</p>
+        <img src="/images/YourDeveloper.png" alt="YourDeveloper.co.uk Logo"/>
     </div>
 </body>
 </html>
