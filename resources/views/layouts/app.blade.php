@@ -13,6 +13,20 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background: #faf7f3;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            }
+
+            .content {
+                min-height: 100vh; /* force scroll area even if content is short */
+            }
+        </style>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -28,7 +42,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main>ss
                 {{ $slot }}
             </main>
         </div>
