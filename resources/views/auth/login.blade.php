@@ -27,7 +27,6 @@
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
          
- 
         </div>
 
         <!-- Remember Me -->
@@ -49,5 +48,10 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+
+    @if (session('device_token'))
+        <input type="hidden" name="device_token" value="{{ session('device_token') }}">
+    @endif
+
     </form>
 </x-guest-layout>

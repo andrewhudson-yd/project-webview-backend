@@ -28,6 +28,18 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+
+        // ✅ Store Firebase token if sent
+        if ($request->filled('device_token')) {
+            DeviceToken::updateOrCreate(
+                ['token' => $request->device_token],
+                [
+                    'user_id' => Auth::id(),
+                    'platform' => $request->platform,
+                ]
+            );
+        }
+
         return redirect()->intended(route('dashboard', absolute: false));
     }
 
