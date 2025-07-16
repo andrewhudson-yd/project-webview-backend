@@ -54,4 +54,6 @@
     @endif
 
     </form>
+
+<p>Device Token: {{ session('device_token') }}</p>
 </x-guest-layout>
