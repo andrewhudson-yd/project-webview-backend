@@ -23,9 +23,7 @@
                 -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
             }
 
-            .content {
-                min-height: 100vh; /* force scroll area even if content is short */
-            }
+
         </style>
     </head>
     <body class="font-sans antialiased">
