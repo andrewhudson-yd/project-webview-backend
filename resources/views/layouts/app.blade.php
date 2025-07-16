@@ -40,7 +40,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main>ss
+            <main>
                 {{ $slot }}
             </main>
         </div>
