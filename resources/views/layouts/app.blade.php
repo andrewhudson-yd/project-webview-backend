@@ -17,7 +17,7 @@
             body, html {
                 margin: 0;
                 padding: 0;
-                min-height: 100vh;
+                min-height: 150vh;
                 background: #faf7f3;
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
